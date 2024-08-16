@@ -30,7 +30,7 @@ download_files()
    	rm -f $D2/luci/menu.d/luci-app-tailscale.json && wget -O $D1/luci/menu.d/luci-app-tailscale.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D2/luci/menu.d/luci-app-tailscale.json && chmod +x $D2/luci/menu.d/luci-app-tailscale.json
  	rm -f $D2/rpcd/acl.d/luci-app-tailscale.json && wget -O $D1/rpcd/acl.d/luci-app-tailscale.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D2/rpcd/acl.d/luci-app-tailscale.json && chmod +x $D2/rpcd/acl.d/luci-app-tailscale.json
    	echo "Downloading file etc..."
-        mkdir -p $D5/config/tailscale
+        mkdir -p $D5/tailscale
    	rm -f $D5/config/tailscale && wget -O $D5/config/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/config/tailscale && chmod +x $D5/config/tailscale
  	rm -f $D5/hotplug.d/iface/40-tailscale && wget -O $D5/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/hotplug.d/iface/40-tailscale && chmod +x $D5/hotplug.d/iface/40-tailscale
  	rm -f $D5/init.d/tailscale && wget -O $D5/init.d/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/init.d/tailscale && chmod +x $D5/init.d/tailscale
