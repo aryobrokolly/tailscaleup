@@ -27,8 +27,12 @@ finish(){
 download_files()
 {
     	touch $DIR/logtailscale.txt
-  	echo "Downloading files from repo..."
+  	echo "Downloading files...."
+        /etc/init.d/tailscale disable
+        /etc/init.d/tailscale stop
+        clear
   	echo "Downloading file sbin..."
+        echo ""
         sleep 2
    	rm -f $D1/tailscale && wget -O $D1/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D1/tailscale && chmod +x $D1/tailscale
         clear
