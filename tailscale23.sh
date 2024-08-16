@@ -12,10 +12,12 @@ finish(){
 	echo ""
     echo "INSTALL TAILSCALE SUCCESSFULLY ;)"
     echo ""
-    /etc/init.d/tailscale enable
-    /etc/init.d/tailscale star
-    echo "Logout and Login again"
-    echo "Configure Services => Tailscale"
+    sleep 2
+    clear
+    service tailscale enable
+    service tailscale star
+    echo "1. Logout and Login again"
+    echo "2. Configure: Services => Tailscale"
     echo ""
     echo "TAILSCALE ENABLED SUCCESSFULLY ;)"
     echo ""
