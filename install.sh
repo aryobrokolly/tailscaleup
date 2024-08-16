@@ -40,10 +40,10 @@ download_files()
 }
 
 echo ""
-echo "Aryo Install Script code from repo."
+echo "Install luci-app-tailscale from repo Aryo Brokolly"
 
 while true; do
-    read -p "This will download the files into $DIR and $DIR2. Do you want to continue (y/n)? " yn
+    read -p "This will download the files repo. Do you want to continue (y/n)? " yn
     case $yn in
         [Yy]* ) download_files; break;;
         [Nn]* ) exit;;
