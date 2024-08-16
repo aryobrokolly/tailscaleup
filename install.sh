@@ -10,11 +10,12 @@ D5=/etc
 
 finish(){
 	echo ""
-    echo "INSTALL SUCCESSFULLY ;)"
+    echo "DOWNLOAD FILE SUCCESSFULLY ;)"
     echo ""
     echo ""
     echo ""
-    echo "Next Car Loss, etc !"
+    echo "Next Download File depend tailscale, etc !"
+    echo ""
     echo ""
 }
 
