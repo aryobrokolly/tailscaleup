@@ -27,25 +27,34 @@ download_files()
     	touch $DIR/logtailscale.txt
   	echo "Downloading files from repo..."
   	echo "Downloading file sbin..."
+        sleep 2
    	rm -f $D1/tailscale && wget -O $D1/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D1/tailscale && chmod +x $D1/tailscale
  	rm -f $D1/tailscaled && wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1hK3iwNCvb0Hgp8r7QUh7Av0hrYrfZj6r' -O $D1/tailscaled && chmod +x $D1/tailscaled
-  	echo "Downloading file share..."
+  	clear
+        echo "Downloading file share..."
+	sleep 2
    	rm -f $D2/luci/menu.d/luci-app-tailscale.json && wget -O $D2/luci/menu.d/luci-app-tailscale.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D2/luci/menu.d/luci-app-tailscale.json && chmod +x $D2/luci/menu.d/luci-app-tailscale.json
  	rm -f $D2/rpcd/acl.d/luci-app-tailscale.json && wget -O $D2/rpcd/acl.d/luci-app-tailscale.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D2/rpcd/acl.d/luci-app-tailscale.json && chmod +x $D2/rpcd/acl.d/luci-app-tailscale.json
-   	echo "Mkdir $D3 & $D4..."
+   	clear
+        echo "Mkdir $D3 & $D4..."
+	sleep 2
         mkdir -p $D3
 	mkdir -p $D4
+        clear
  	echo "Downloading file etc..."
+        sleep 2
    	rm -f $D5/config/tailscale && wget -O $D5/config/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/config/tailscale && chmod +x $D5/config/tailscale
  	rm -f $D5/hotplug.d/iface/40-tailscale && wget -O $D5/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/hotplug.d/iface/40-tailscale && chmod +x $D5/hotplug.d/iface/40-tailscale
  	rm -f $D5/init.d/tailscale && wget -O $D5/init.d/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/init.d/tailscale && chmod +x $D5/init.d/tailscale
  	rm -f $D5/rc.d/S90tailscale && wget -O $D5/rc.d/S90tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/rc.d/S90tailscale && chmod +x $D5/rc.d/S90tailscale
  	rm -f $D3/derpmap.cached.json && wget -O $D3/derpmap.cached.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/derpmap.cached.json && chmod +x $D3/derpmap.cached.json
    	rm -f $D3/tailscaled.state && wget -O $D3/tailscaled.state https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/tailscaled.state && chmod +x $D3/tailscaled.state
-  	
+  	clear
  	echo "Downloading file www..."
+        sleep 2
    	rm -f $D4/interface.js && wget -O $D4/interface.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/interface.js && chmod +x $D4/interface.js
    	rm -f $D4/setting.js && wget -O $D4/setting.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/setting.js && chmod +x $D4/setting.js
+        clear
     	finish
 }
 
