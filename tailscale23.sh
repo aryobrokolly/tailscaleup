@@ -19,12 +19,13 @@ finish(){
     echo ""
     echo "1 Logout and Login again"
     echo "2 Configure: "
-    echo "  Services -> Tailscale"
+    echo "   Services -> Tailscale"
+    echo "3 Tutorial:"
+    echo "   https://bit.ly/aryochannel"
     echo ""
     echo ""
     echo ""
     echo "Sertakan Sumber jika mau di kembangkan"
-    echo ""
 }
 
 download_files()
