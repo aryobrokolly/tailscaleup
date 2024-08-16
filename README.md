@@ -4,7 +4,7 @@
 # Cara Install dan petunjuk penggunaan
 - Run installation script:
 ```
-bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/tailscaleup/master/tailscaledown.sh')"
+bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/tailscaleup/master/tailscale23.sh')"
 ```
 
 # Thank to
