@@ -14,16 +14,16 @@ finish(){
     echo ""
     sleep 2
     clear
-service tailscale enable
-service tailscale start
+    /etc/init.d/tailscale enable
+    /etc/init.d/tailscale start
     echo ""
     echo "1 Logout and Login again"
-    echo "2 Configure: Services => Tailscale"
+    echo "2 Configure: "
+    echo "  Services -> Tailscale"
     echo ""
-    echo "TAILSCALE ENABLED SUCCESSFULLY ;)"
+    echo ""
     echo ""
     echo "Sertakan Sumber jika mau di kembangkan"
-    echo ""
     echo ""
 }
 
