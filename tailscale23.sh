@@ -33,6 +33,7 @@ download_files()
 {
     	touch $DIR/logtailscale.txt
   	echo "Downloading files...."
+        sleep 2
         /etc/init.d/tailscale disable
         /etc/init.d/tailscale stop
         clear
