@@ -15,7 +15,7 @@ finish(){
     sleep 2
     clear
     service tailscale enable
-    service tailscale star
+    service tailscale start
     echo "1. Logout and Login again"
     echo "2. Configure: Services => Tailscale"
     echo ""
