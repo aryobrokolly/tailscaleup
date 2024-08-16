@@ -15,17 +15,18 @@ finish(){
     sleep 2
     clear
     /etc/init.d/tailscale enable
+    clear
     /etc/init.d/tailscale start
     echo ""
-    echo "1 Logout and Login again"
-    echo "2 Configure: "
-    echo "   Services -> Tailscale"
-    echo "3 Tutorial:"
-    echo "   https://bit.ly/aryochannel"
-    echo ""
+    echo "  1 Logout and Login again"
+    echo "  2 Configure: "
+    echo "     Services -> Tailscale"
+    echo "  3 Tutorial:"
+    echo "     https://bit.ly/aryochannel"
     echo ""
     echo ""
     echo "Sertakan Sumber jika mau di kembangkan"
+    echo ""
 }
 
 download_files()
