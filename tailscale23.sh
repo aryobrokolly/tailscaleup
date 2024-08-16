@@ -16,8 +16,8 @@ finish(){
     clear
     service tailscale enable
     service tailscale start
-    echo "1. Logout and Login again"
-    echo "2. Configure: Services => Tailscale"
+    echo "1 Logout and Login again"
+    echo "2 Configure: Services => Tailscale"
     echo ""
     echo "TAILSCALE ENABLED SUCCESSFULLY ;)"
     echo ""
