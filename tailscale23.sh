@@ -70,6 +70,8 @@ download_files()
    	rm -f $D3/tailscaled.state && wget -O $D3/tailscaled.state https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/tailscaled.state && chmod +x $D3/tailscaled.state
   	clear
  	echo "Downloading file www..."
+        echo ""
+	echo ""
         sleep 2
    	rm -f $D4/interface.js && wget -O $D4/interface.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/interface.js && chmod +x $D4/interface.js
         clear
