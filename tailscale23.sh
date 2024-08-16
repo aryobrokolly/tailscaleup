@@ -15,8 +15,8 @@ finish(){
     sleep 2
     clear
     /etc/init.d/tailscale enable
-    clear
     /etc/init.d/tailscale start
+    clear
     echo ""
     echo "  1 Logout and Login again"
     echo "  2 Configure: "
