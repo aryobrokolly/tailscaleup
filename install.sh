@@ -1,32 +1,30 @@
 #!/bin/ash
 # Installation script by ARYO.
 
-DIR=/usr/bin
-DIR2=/etc/init.d
+D1=/usr/sbin
+D2=/usr/share
+D3=/etc/tailscale
+D4=/www/luci-static/resources/view/tailscale
 
 
 
 finish(){
 	echo ""
     echo "INSTALL SUCCESSFULLY ;)"
-#    echo "There are 2 important steps to finish this setup:"
-#    echo ""
-#    echo "1. Make sure this line is in the cron. To open the cron editor, run: crontab -e"
-#    echo "   */2 * * * * $DIR/wwan-keep-alive.sh"
-#    echo ""  
-#    echo "2. The interface representing the LTE connection is set to 'wwan0'."
-#    echo "   To change the interface, please edit the line INTERFACE='wwan0' in the 'restart-interface.sh'."
     echo ""
-    echo "Next configuration firewall, etc !"
+    echo ""
+    echo ""
+    echo "Next Car Loss, etc !"
+    echo ""
 }
 
 download_files()
 {
     	touch $DIR/logtailscale.txt
   	echo "Downloading files from repo..."
-   	wget -O $DIR/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscale && chmod +x $DIR/tailscale
- 	wget -O $DIR/tailscaled https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscaled && chmod +x $DIR/tailscaled
-  	wget -O $DIR2/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/etc/init.d/tailscale && chmod +x $DIR2/tailscale
+   	rm -f $D1/tailscale && wget -O $DIR/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscale && chmod +x $DIR/tailscale
+ 	rm -f $D1/ &&wget -O $DIR/tailscaled https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscaled && chmod +x $DIR/tailscaled
+  	rm -f $D1/ &&wget -O $DIR2/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/etc/init.d/tailscale && chmod +x $DIR2/tailscale
     	finish
 }
 
