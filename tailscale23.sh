@@ -10,11 +10,14 @@ D5=/etc
 
 finish(){
 	echo ""
-    echo "DOWNLOAD FILE SUCCESSFULLY ;)"
+    echo "INSTALL TAILSCALE SUCCESSFULLY ;)"
     echo ""
+    /etc/init.d/tailscale enable
+    /etc/init.d/tailscale star
     echo ""
+    echo "TAILSCALE RUNNING ;)"
     echo ""
-    echo "Next Download File depend tailscale, etc !"
+    echo "Sertakan Sumber jika mau di kembangkan"
     echo ""
     echo ""
 }
